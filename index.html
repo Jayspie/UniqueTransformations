@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8"/>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Unique Transformation</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div><img id="head-im" src="New Project.png" width="1345" height="897"></div>
+
+    <header>
+        <div id="name">
+        <h1>Unique Transformation</h1>
+        </div>
+
+        <div id="menu">
+        <a href="https://google.com" target="_blank"><h1>Menu</h1></a>
+        </div>
+
+        <h1 id="image-text">Making the experience count</h1>
+
+    </header>
+
+    <main>
+      <div class="event-typ">
+        <p id="based">Based in Houston,Texas</p>
+
+        <p id="designer">Event & Interior Designer</p>
+
+        <ul>
+            <li>&#8729; Type</li>
+            <li>&#8729; Of</li>
+            <li>&#8729; Events</li>
+            <li>&#8729; You</li>
+            <li>&#8729; Do</li>
+        </ul>
+
+      </div>
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <h1>Rental</h1>
+                <p class="parg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a vestibulum dui. 
+                    Nullam pretium lectus ante, at pretium odio tincidunt quis. Cras consectetur lorem ut mauris mollis, quis dictum turpis luctus. 
+                    Proin vel tristique metus.</p>
+                    <a href="https://google.com" target="_blank" class="learn-more"><p>Learn More</p></a>
+      </div>
+
+      <div class="mySlides fade">
+        <h1>Staging</h1>
+        <p class="parg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a vestibulum dui. 
+        Nullam pretium lectus ante, at pretium odio tincidunt quis. Cras consectetur lorem ut mauris mollis, quis dictum turpis luctus. 
+        Proin vel tristique metus.</p>
+        <a href="https://google.com" target="_blank" class="learn-more"><p>Learn More</p></a>
+      </div>
+
+      <div class="mySlides fade">
+        <h1>Interior Design</h1>
+        <p class="parg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a vestibulum dui. 
+            Nullam pretium lectus ante, at pretium odio tincidunt quis. Cras consectetur lorem ut mauris mollis, quis dictum turpis luctus. 
+            Proin vel tristique metus.</p>
+            <a href="https://google.com" target="_blank" class="learn-more"><p>Learn More</p></a>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    </main>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      }
+    </script>
+    <!--<footer>
+        <a href="https://linktr.ee/Jayspie" target="_blank"><em>#Designed/built-by:Jaytech;</em></a>
+    </footer>-->
+</body>
+</html>
