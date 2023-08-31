@@ -1,0 +1,169 @@
+@font-face {
+    font-family: RochesterRegular;
+    src: url("Rochester-Regular.ttf")
+  }
+  
+  @font-face {
+    font-family: GtSuperLight;
+    src: url("GTSuperDisplayLight.ttf")
+  }
+  
+  @font-face {
+    font-family: AcuminProMedium;
+    src: url("FontsFree-Net-Acumin-Pro-Medium-1.ttf")
+  }
+  
+  body{
+    background-color:#f2edea;
+    font-size: 72px;
+  }
+  
+  header{
+    font-family:RochesterRegular;
+    color: #504644;
+  }
+  #name{
+    font-size: .35em;
+    display: inline-block;
+    margin-left: 135px;
+    margin-top: -800px;
+    width: 30%;
+  }
+  
+  #name a:link{
+    color: #504644;
+    text-decoration: none ;
+  }
+  #name a:visited{
+  color: #504644;
+  text-decoration: none;
+  }
+  .menu{
+    margin-left: 60px;
+    font-size: .15em;
+    display: inline-block;
+  }
+  
+  .menu a{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    text-decoration: none;
+  }
+  
+  .menu .port:hover{
+    display:block;
+  }
+  .dropdown-content{
+    display:none;
+  }
+  .menu .dropdown-content:hover{
+    display:block;
+  }
+  main{
+    margin-bottom: 150px;
+  }
+  #port_text{
+    font-family: 'GtSuperLight';
+    font-size: .45em;
+    color: #504644;
+  }
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: -150px auto;
+  }
+  
+  .mySlides {
+    display: none;
+    margin-top: 250px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -545px;
+    margin-left: -50px;
+    padding: 16px;
+    color: #504644;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: -50px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .mySlides{
+    text-align: center;
+    color: #504644
+  }
+  .events{
+    text-align: center;
+    margin-left:65px;
+  }
+  .event{
+    display: inline-block;
+    width:25%;
+    height:auto;
+    margin-bottom:35px;
+    margin-right:50px;
+  }
+  .event_pic{
+    text-align: center;
+    width:250px;
+    height: auto;
+    margin-right:100px;
+  }
+
+  .event_file{
+    font-size: .45em;
+    text-align: center;
+    font-family: 'GtSuperLight';
+    color: #504644;
+    width:10px;
+    height: 10px;
+  }
+
+  .event_file:link {
+    color: #504644;
+    text-decoration: none;
+  }
+  .event_file:visited {
+    color: #504644;
+    text-decoration: none;
+  }
+  .event_file p{
+    margin-top:10px;
+  }
+  footer a{
+    font-family: 'Courier New OS', monospace;
+    font-weight: normal;
+    font-size:.3em;
+    text-decoration: none;
+    color: #504644;
+    text-align: center;
+    margin-left: 500px;
+    width: 500px;
+  }

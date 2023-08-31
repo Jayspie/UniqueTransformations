@@ -1,0 +1,147 @@
+
+@font-face {
+    font-family: RochesterRegular;
+    src: url("Rochester-Regular.ttf")
+  }
+  
+  @font-face {
+    font-family: GtSuperLight;
+    src: url("GTSuperDisplayLight.ttf")
+  }
+  
+  @font-face {
+    font-family: AcuminProMedium;
+    src: url("FontsFree-Net-Acumin-Pro-Medium-1.ttf")
+  }
+  
+  body{
+    background-color:#f2edea;
+    font-size: 72px;
+  }
+  
+  header{
+    font-family:RochesterRegular;
+    color: #504644;
+  }
+  #name{
+    font-size: .35em;
+    display: inline-block;
+    margin-left: 135px;
+    margin-top: -800px;
+    width: 30%;
+  }
+  
+  #name a:link{
+    color: #504644;
+    text-decoration: none ;
+  }
+  #name a:visited{
+  color: #504644;
+  text-decoration: none;
+  }
+  .menu{
+    margin-left: 60px;
+    font-size: .15em;
+    display: inline-block;
+  }
+  
+  .menu a{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    text-decoration: none;
+  }
+  
+  .vl {
+    display: none;
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+   margin: -250px auto;
+  }
+
+  form{
+    margin-left:100px;
+  }
+
+  form label{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    font-size: .5em;
+  }
+
+  form input{
+    font-family: 'GtSuperLight';
+    width:300px;
+    font-size: .3em;
+  }
+
+  form select{
+    font-family: 'GtSuperLight';
+    width:300px;
+    font-size: .3em;
+  }
+
+  
+  form ul{
+    list-style: none;
+    margin-left: -10px;
+    margin-top: 20px;
+    width:45%;
+
+  }
+    form li {
+      font-size: .75em;
+      margin-left: -150px;
+    }
+    form li span{
+      position: relative;
+      left: -100px;
+    }
+  form #add_text{
+    width: 500px;
+    height:auto;
+  }
+ form button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  font-size: .3em;
+  font-family: 'GtSuperLight';
+  color: #504644;
+	cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer a{
+    font-family: 'Courier New OS', monospace;
+    font-weight: normal;
+    font-size:.3em;
+    text-decoration: none;
+    color: #504644;
+    text-align: center;
+    margin-left: 500px;
+    width: 500px;
+  }

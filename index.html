@@ -13,29 +13,35 @@
 </head>
 
 <body>
+  <div class="name">
+    <a href="/index.html"><h1>Unique Transformation</h1></a>
+    </div>
+    <header id="mySidenav" class="sidenav">
 
-    <header>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="menu">
+        <a href="/protfolio.html"><h1>Portfolio</h1></a>
+      </div>
+
+      <div class="menu">
+        <a href="https://google.com" target="_blank">
+          <h1>Services</h1>
+        </a>
+      </div>
+
+      <div id="name">
+        <a href="/index.html"><h1>Unique Transformation</h1></a>
+        </div>
+
         <div class="menu">
-        <a href="https://google.com" target="_blank"><h1>Portfolio</h1></a>
-        </div>
+      <a href="#contact"><h1>Contact</h1></a>
+      </div>
 
-         <div class="menu">
-        <a href="https://google.com" target="_blank"><h1>Services</h1></a>
-        </div>
-
-        <div id="name">
-          <h1>Unique Transformation</h1>
-          </div>
-
-         <div class="menu">
-        <a href="https://google.com" target="_blank"><h1>Contact</h1></a>
-        </div>
-
-         <div class="menu">
-        <a href="https://google.com" target="_blank" ><h1>Book A Consult</h1></a>
-        </div>
-
+        <div class="menu">
+      <a href="/consultation.html"><h1>Book A Consultation</h1></a>
+      </div>
     </header>
+    <span onclick="openNav()">Menu</span>
 <div class="vl"></div>
     <main>
       <div class="slideshow-container">
@@ -86,7 +92,7 @@
         </p>
       </div>
 
-      <div class="contact">
+      <div id="contact">
         <h1>Want more information?</h1>
         <p class="link"><a href="mailto:uniquetransformations125@gmail.com"target="_blank" >Uniquetransformations125@gmail.com</a></p>
         <p id="number">(832)610-8730</p>
@@ -130,9 +136,22 @@
       }
       slides[slideIndex-1].style.display = "block";
       }
+      function show(){
+        var port=document.getElementByClassName("dropdown-conten");
+        port.style.display="block";
+      }
+
+
+
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";}
     </script>
 </body>
-<!--
-  Instagram and Facebook icons are from https://icons8.com/
--->
+<!---Instagram and Facebook icons are from icons8.com/-->
 </html>
