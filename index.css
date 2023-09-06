@@ -20,28 +20,28 @@ body{
 }
 
 header{
-  font-family:RochesterRegular;
+  font-family:'RochesterRegular';
   color: #504644;
 }
-.name{
-  font-size: .35em;
+#name{
+  font-size: .15em;
   display: inline-block;
-  margin-left: 135px;
+  margin-left: 110px;
   margin-top: -800px;
-  width: 30%;
+  width: 20%;
 }
 
-.name a:link{
+#name a:link{
   color: #504644;
   text-decoration: none ;
 }
-.name a:visited{
+#name a:visited{
 color: #504644;
 text-decoration: none;
 }
 .menu{
   margin-left: 60px;
-  font-size: .15em;
+  font-size: .1em;
   display: inline-block;
 }
 
@@ -51,25 +51,6 @@ text-decoration: none;
   text-decoration: none;
 }
 
-.menu .port:hover{
-  display:block;
-}
-.dropdown-content{
-  display:none;
-}
-.menu .dropdown-content:hover{
-  display:block;
-}
-
-.vl {
-  display: none;
-  border-left: 6px solid green;
-  height: 500px;
-  position: absolute;
-  left: 50%;
- margin: -250px auto;
-}
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -77,8 +58,11 @@ text-decoration: none;
 }
 
 .mySlides {
-  display: none;
   margin-top: 250px;
+  text-align: center;
+}
+.mySlides img{
+  width: 700px;
 }
 
 .prev, .next {
@@ -96,9 +80,11 @@ text-decoration: none;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+.prev{
+  left: 100px;
+}
 .next {
-  right: -50px;
+  right: 50px;
   border-radius: 0 3px 3px 0;
 }
 
@@ -126,11 +112,13 @@ text-decoration: none;
 }
 
 .event-typ #based{
-  font-size: .45em;
+  font-size: .35em;
 }
-
+.event-typ #designer{
+  font-size: .6em;
+}
 .event-typ #info{
-  font-size: .45em;
+  font-size: .35em;
 }
 .event-typ a:link {
   color: #504644;
@@ -148,7 +136,7 @@ text-decoration: none;
   margin-top: 200px;
 }
 .services h1{
-  font-size: 1em;
+  font-size: .6em;
   font-weight: normal;
 }
 
@@ -157,7 +145,7 @@ text-decoration: none;
 }
 
 .services ul li{
-  font-size: .45em;
+  font-size: .3em;
   margin-right:50px;
   display: inline-block;
 }
@@ -165,24 +153,25 @@ text-decoration: none;
   font-family: 'GtSuperLight';
   color: #504644;
   margin-top: 200px;
+  height:300px;
 }
 .about img{
-  width:350px;
+  width:250px;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 50px;
 }
 .about h1{
   font-weight:normal;
-  font-size:1em;
-  margin-top:-400px;
-  margin-left: 650px;
+  font-size:.6em;
+  margin-top:-250px;
+  margin-left: 400px;
 }
 .about p{
   text-align: left;
-  font-size: .5em;
+  font-size: .25em;
   width:50%;
-  margin-left: 650px;
+  margin-left: 400px;
 }
 
 #contact{
@@ -193,11 +182,11 @@ text-decoration: none;
 }
 #contact h1{
   font-weight:normal;
-  font-size:1em;
+  font-size:.6em;
   text-align: center;
 }
 #contact p{
-  font-size: .45em;
+  font-size: .25em;
   text-align: center;
 }
 #contact .link a:link{
@@ -216,7 +205,7 @@ text-decoration: none;
 }
 
 #contact ul li{
-  font-size: .45em;
+  font-size: .25em;
   margin-right:50px;
   display: inline-block;
 }
@@ -227,1025 +216,457 @@ text-decoration: none;
 footer a{
   font-family: 'Courier New OS', monospace;
   font-weight: normal;
-  font-size:.3em;
+  font-size:.25em;
   text-decoration: none;
   color: #504644;
   text-align: center;
-  margin-left: 500px;
+  margin-left: 315px;
   width: 500px;
 }
 
-
-
-
-@media screen and (max-width: 1950px) { /*Computer Monitors*/
+@media screen and (max-width: 2560px){ 
   header{
-    margin-left: 250px;
+    margin-left:375px;
   }
-  .about{
-    margin-left:250px;
-    width:75%;
-  }
-  
-  footer a{
-    margin-left: 799px;
-    width: 100px;
-  }
-
-  .closebtn{
-    display:none;
-  }
-  span{
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 1440px) { /*Large Laptops*/
-  body{
-    font-size: 62px;
-  }
-  
-  header{
+  .menu{
     margin-left: 100px;
+    font-size: .25em;
   }
-  .about{
-    margin-left: 100px;
-    margin-top: 200px;
+  #name{
+    font-size: .35em;
+    margin-left: 200px;
+    margin-top: -800px;
+    width: 20%;
   }
-  
-  footer a{
-    margin-left: 550px;
-    width: 100px;
-  }
-  
-}
 
-@media screen and (max-width: 1024px) { /*Laptops*/
-  body{
-    font-size: 62px;
+  .mySlides img{
+    width: 1000px;
   }
-  .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 300px;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  .prev{
+    left: -10px;
+  }
+  .next {
+    right: -50px;
   }
   
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  .event-typ #based{
+    font-size: .5em;
+  }
+  .event-typ #designer{
+    font-size: .8em;
+  }
+  .event-typ #info{
+    font-size: .5em;
+  }
+
+  .services h1{
+    font-size: .8em;
   }
   
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .services ul li{
+    font-size: .5em;
   }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  .sidenav{
-    display: block;
-  }
-  .closebtn{
-    display:block;
-  }
-  span{
-    display: block;
-    width:15%;
-    margin-left: 950px;
-  }
-  .name{
-    font-family:'RochesterRegular';
+
+  .about{
+    font-family: 'GtSuperLight';
     color: #504644;
-  }
-  header{
-    margin-left: 500px;
-  }
-  span{
-    border:2px solid green;
-    font-size: .65em;
+    margin-top: 200px;
+    margin-left:400px;
+    height:500px;
+    width:70%;
 
   }
-  .about{
-    margin-left: 100px;
-    margin-top: 200px;
+  .about img{
+    width:450px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  .about h1{
+    font-weight:normal;
+    font-size:.8em;
+    margin-top:-450px;
+    margin-left: 800px;
+  }
+  .about p{
+    text-align: left;
+    font-size: .5em;
+    width:50%;
+    margin-left: 800px;
+  }
+
+  #contact h1{
+    font-weight:normal;
+    font-size:.8em;
+    text-align: center;
+  }
+  #contact p{
+    font-size: .5em;
+    text-align: center;
+  }
+  
+  #contact ul li{
+    font-size: .5em;
+    margin-right:50px;
+    display: inline-block;
+  }
+  #contact img{
+    width: 100px;
   }
   
   footer a{
-    margin-left: 550px;
+    font-size:.4em;
+    margin-left: 1050px;
+  }
+}
+
+@media screen and (max-width: 2100px){ 
+  header{
+    margin-left:250px;
+  }
+  .menu{
+    margin-left: 50px;
+    font-size: .25em;
+  }
+  #name{
+    font-size: .35em;
+    margin-left: 150px;
+    margin-top: -800px;
+    width: 25%;
+  }
+
+  .mySlides img{
+    width: 1000px;
+  }
+
+  .prev{
+    left: -10px;
+  }
+  .next {
+    right: -50px;
+  }
+  
+  .event-typ #based{
+    font-size: .5em;
+  }
+  .event-typ #designer{
+    font-size: .8em;
+  }
+  .event-typ #info{
+    font-size: .5em;
+  }
+
+  .services h1{
+    font-size: .8em;
+  }
+  
+  .services ul li{
+    font-size: .5em;
+  }
+
+  .about{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    margin-top: 200px;
+    margin-left:325px;
+    height:500px;
+    width:70%;
+
+  }
+  .about img{
+    width:450px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+  .about h1{
+    font-weight:normal;
+    font-size:.8em;
+    margin-top:-450px;
+    margin-left: 800px;
+  }
+  .about p{
+    text-align: left;
+    font-size: .5em;
+    width:50%;
+    margin-left: 800px;
+  }
+
+  #contact h1{
+    font-weight:normal;
+    font-size:.8em;
+    text-align: center;
+  }
+  #contact p{
+    font-size: .5em;
+    text-align: center;
+  }
+  
+  #contact ul li{
+    font-size: .5em;
+    margin-right:50px;
+    display: inline-block;
+  }
+  #contact img{
     width: 100px;
   }
-}
-
-@media screen and (max-width: 900px) { /*Tablets*/
- body{
-    background: linear-gradient(#88CAFC, #d2ebff);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .sidebar {
-    margin-left:-10px;
-  }
-
-  #demo{
-    display:none;
-  }
-
-  #wavier{
-    width:10%;
-    padding-left: 0;
-    
-    font-size: .35em
-  }
-
-  #sidegif-wishlist{
-    display: block;
-    width: 300px;
-    height:300px;
-    margin: -100px auto;
-  }
-
-  #Contact h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Contact ul{
-    list-style-type: none;
-    margin-top: -20px;
-    text-align: center;
-  }
-
-  #Contact li{
-    font-size: .5em;
-    margin-top: 20px;
-  }
   
-  #Contact p{
-    font-size: .49em;
-    text-align: center;
-    margin-left: 2%;
-  }
-
-  #sidegif-contact{
-    display: block;
-    width:315px;
-    height:315px;
-    margin: 0px auto;
-  }
-
-  #Toys h1{
-    font-size: 1em;
-    margin: 0px auto;
-    text-align: center;
-  }
-
-  #Toys ul{
-    list-style-type: none;
-    margin: 20px auto;
-  }
-
-  #Toys li{
-    font-size: .7em;
-    margin-top: 75px;
-  }
-
-  #Clothes h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Clothes ul{
-    list-style-type: none;
-    margin-top: -20px;
-  }
-
-  #Clothes li{
-    width: 65%;
-    font-size: .7em;
-    margin-top: 75px;
-  }
-
-  #sidegif-Clothes{
-    display: block;
-    margin:-550px auto;
-    width:275px;
-    height:275px;
-  }
-
-  #Favorite_shows h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Favorite_shows ul{
-    list-style-type: none;
-    margin-top: -20px;
-  }
-
-  #Favorite_shows li{
-    font-size: .45em;
-    margin-top: 75px;
-  }
-
-  #playroom{
-    width:800px; 
-    height:250px;
-  }
-  
-  #title{
-    font-size: .95em;
-    margin-top: -250px;
-    margin-left:-10px;
-  }
-  
-  #sub{
-    text-align: center;
-    width: 100%;
-    font-size: .45em;
-    margin-top: -75px;
-    margin-left:1px;
-  }
-
-  #party_info{
-    font-size: .45em;
-  
-  }
-    #map-font{
-      font-size: .9em;
-    }
-  
-  #rsvp{
-    font-size: .45em;
-    margin-top: 50px;
-    display: block;
-  }
-
-  
-}
-
-@media screen and (max-width: 840px) { /*Tablets*/
-  body{
-    background: linear-gradient(#88CAFC, #d2ebff);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-  
-  .sidebar {
-    margin-left:20px;
-  }
-
-  #wavier{
-    padding-top: 15px;
-    width: 25%;
-    font-size: .35em;
-  }
-
-  #Contact h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Contact ul{
-    list-style-type: none;
-    margin-top: -20px;
-    text-align: center;
-  }
-
-  #Contact li{
-    font-size: .45em;
-    margin-top: 20px;
-  }
-
-  #Clothes h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Clothes ul{
-    list-style-type: none;
-    margin-top: -20px;
-  }
-
-  #Clothes li{
-    width: 65%;
-    font-size: .7em;
-    margin-top: 100px;
-  }
-
-  #sidegif-Clothes{
-    display: block;
-    margin:-550px auto;
-    width:275px;
-    height:275px;
-  }
-
-  #Wishlist ul{
-    list-style-type: none;
-    margin: -20px auto;
-    text-align: center;
-  }
-
-  #Wishlist li{
-    font-size: .75em;
-    margin-top: 20px;
-  }
-
-  #sidegif-wishlist{
-    display: block;
-    width: 250px;
-    height:250px;
-    margin: -25px auto;
-  }
-
-  #playroom{
-    width:700px; 
-    height:550;
-  }
-}
-
-@media screen and (max-width: 430px) { /*IPhone 12 pro max */
-#gif{
-  width:55%;
-  height:auto;
-  padding-top: 50%;
-  padding-bottom: 50%;
-}
-body{
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  font-size: 72px;
-  text-align: center;
-  overflow-y: scroll;
-}
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background: linear-gradient(#88CAFC, #d2ebff);opacity:.96;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-  .sidebar a {
-    /*border:2px solid green;*/
-    padding-bottom: 85px;
-    padding-left: 25px;
-    text-decoration: none;
-    font-size: .375em;
-    text-align: left;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    /*take off or change the width when adding the menu*/
-    width:100%;
-  }
-  #wavier{
-    width:150%;
-    padding-left:25px;
+  footer a{
     font-size:.4em;
+    margin-left: 800px;
   }
+}
 
-  .sidebar button {
-    border:none;
-    background-color:transparent;
-    padding-bottom: 50px;
-    padding-left: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    font-family:HelloHeadlineW00Regular;
-    text-align: left;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    width: 85%;
-    height:10px;
-    /*take off or change the margins when putting back the menu*/
-    margin-top:-100px;
-    margin-bottom:150px;
+@media screen and (max-width: 1950px){ 
+  header{
+    margin-left:200px;
   }
-
-  .sidebar button:hover{
-    color: #f8b9d4; 
+  .about{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    margin-top: 200px;
+    margin-left:150px;
+    height:500px;
+    width:70%;
   }
-
-  .sidebar a:hover {
-    color: #f8b9d4;
-  }
-
-  .sidebar .closebtn {
+  footer a{
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    width: 10px;
-    height: 0px;
-    display:block;
+    margin-left: 700px;
   }
-
-  .openbtn {
-    font-size: .6em;
-    display: block;
-    margin-left:340px;
-    margin-top:-240px;
-  }
-
-  .openbtn:hover {
-    color: #f8b9d4;
-  }
-
-#phdemo{
-  display:block;
-  color:white;
-  font-size: .5em;
-  margin-top: -70px;
-  margin-left:0px;
-  width:65%;
 }
 
-#playroom{
-  width:385px; 
-  height:150px;
-  margin-top:50px;
-  margin-left: -15px;
-}
-
-#title{
-  font-size: 1em;
-  margin-top: -10px;
-}
-
-#sub{
-  font-size: .4em;
-  margin-top: -65px;
-  margin-left: -5px;
-}
-
-#party_info{
-  font-size: .55em;
-
-}
-  #map-font{
-    font-size: .85em;
+@media screen and (max-width: 1750px){ 
+  header{
+    margin-left:150px;
   }
-
-#rsvp{
-  font-size: .7em;
-}
-
- #Menu h1{
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: center;
+  .menu{
+    margin-left: 35px;
   }
-
-  #Menu p{
-   
-    width: 95%;
-    text-align: center;
-    font-size: .30em;
-    margin-left: 2%;
-  }
-
-  #Menu ul{
-    list-style-type: none;
-    margin-top: -20px;
-    text-align: center;
-    width: 85%;
-  }
-
-  #Menu li{
-    font-size: .5em;
-    margin-top: 20px;
-    left: -50px;
-  }
-  #sidegif-menu{
-    display:block;
+  #name{
     margin-left: 150px;
-    text-align: center;
+    margin-top: -800px;
+    width: 30%;
   }
-
-  #Contact h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
+  footer a{
+    position: absolute;
+    margin-left: 600px;
   }
-
-  #Contact ul{
-    list-style-type: none;
-    margin-top: -20px;
-    text-align: center;
-    margin-left: 1%;
-    width: 82%;
-
-  }
-
-  #Contact li{
-    font-size: .5em;
-    margin-top: 20px;
-    margin-left: -10px;
-    text-decoration: none;
-    width:100%;
-  }
-
-  #Contact p{
-    font-size: .35em;
-    text-align: center;
-    margin-left: 2%;
-  }
-
-  #sidegif-contact{
-    display:block;
-    margin:0px auto;
-    text-align: center;
-  }
-
-  #Wishlist h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Wishlist ul{
-    list-style-type: none;
-    margin-left:-10%;
-    margin-top: -20px;
-    text-align: center;
-  }
-
-  #Wishlist li{
-    width: 105%;
-    margin-left:0px;
-    font-size: .55em;
-    margin-top: 20px;
-  }
-  #Wishlist button{
-    border:10px;
-    color:#404066;
-    background-color:transparent;
-    text-decoration: none;
-    font-size: 1em;
-    font-family:HelloHeadlineW00Regular;
-  }
-  #sidegif-wishlist{
-    display:block;
-    width:200px;
-    height:200px;
-    margin:-10px auto;
-    text-align: center;
-  }
-    #Toys h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Toys ul{
-      width: 75%;
-      list-style-type: none;
-      margin-top: -20px;
-      margin-left:15px;
-    }
-
-    #Toys li{
-      font-size: .6em;
-      margin-left: 15px;
-      margin-top: 45px;
-      text-align: center;
-    }
-    
-    #Clothes h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Clothes ul{
-      width: 60%;
-      margin-top: -20px;
-      margin-left: 45px;
-    }
-
-    #Clothes li{
-      width: 115%;
-      font-size: .6em;
-      margin-top: 20px;
-      margin-bottom: 75px;
-      text-align: center;
-    }
-
-    #sidegif-Clothes{
-      display:block;
-      margin-left: 150px;
-      margin-top: -400px;
-      text-align: center;
-      width:200px;
-      height:200px;
-    }
-
-    #Favorite_shows h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Favorite_shows ul{
-      width:85%;
-      list-style-type: none;
-      margin-top: -20px;
-    }
-
-    #Favorite_shows li{
-      font-size: .5em;
-      margin-top: 35px;
-      text-align: center;
-    }
-    #author{
-      display:block;
-      width: 150%;
-      font-family: 'Courier New OS', monospace;
-      font-weight: normal;
-      font-size:.2em;
-      color:#404066 ;
-    }
-
-
 }
 
-@media screen and (max-width: 393px) { /*Oneplus Nord 2, Iphone XR*/ 
-  .openbtn {
-    font-size: .6em;
-    display: block;
-    margin-left:330px;
-    margin-top:-295px;
+@media only screen and (max-width: 1440px){
+  header{
+    margin-left: 100px;
   }
-
-  #playroom{
-    margin:50px 0px;
+  .menu{
+    margin-left: 40px;
+    font-size: .2em;
   }
-
-  #Menu h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Menu p{
-    width: 95%;
-    text-align: center;
+  #name{
     font-size: .3em;
-    margin-left: 2%;
-    margin-top: -40px;
+    margin-left: 100px;
+    margin-top: -800px;
+    width: 30%;
   }
 
-  #Menu li{
-    font-size: .5em;
-    margin-top: 20px;
-    left: -50px;
-  }
-  #sidegif-menu{
-    display:block;
-    margin-left: 150px;
-    text-align: center;
-    margin-top: -15px;
+  .mySlides img{
+    width: 800px;
   }
 
-  #Contact h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
+  .prev{
+    left: 110px;
+  }
+  .next {
+    right: 50px;
+  }
+  
+  .event-typ #based{
+    font-size: .4em;
+  }
+  .event-typ #designer{
+    font-size: .7em;
+  }
+  .event-typ #info{
+    font-size: .4em;
   }
 
-  #Contact ul{
-    list-style-type: none;
-    margin-top: -10px;
-    text-align: center;
-    margin-left: 1%;
-    width: 82%;
-
+  .services h1{
+    font-size: .7em;
   }
-
-  #Contact li{
-    font-size: .5em;
-    margin-top: 20px;
-  }
-
-  #Contact p{
+  
+  .services ul li{
     font-size: .35em;
-    text-align: center;
-    margin-left: 2%;
   }
 
-  #sidegif-contact{
-    display:block;
-    margin-top:-30px;
-    width:300px;
-    height: 300px;
-  }
-
-  #Wishlist h1{
-    font-size: 1em;
-    margin-top:10px;
-    text-align: center;
-  }
-
-  #Wishlist ul{
-    list-style-type: none;
-    margin-left:-10%;
-    margin-top: -20px;
-    text-align: center;
-  }
-
-  #Wishlist li{
-    width: 95%;
-    margin-left:15px;
-    font-size: .55em;
-    margin-top: 35px;
-  }
-
-  #sidegif-wishlist{
-    display:block;
-    margin: -10px auto;
-    text-align: center;
-  }
-    #Toys h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Toys li{
-      font-size: .5em;
-      margin-left: 15px;
-      margin-top: 45px;
-      text-align: center;
-    }
-
-    #sidegif-Toys{
-      display:block;
-      margin-top: -85px;
-      margin-left: 150px;
-      width:150px;
-      height:150px;
-    }
-    
-    #Clothes h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Clothes li{
-      width: 110%;
-      font-size: .5em;
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    #sidegif-Clothes{
-      display:block;
-      margin-top: -375px;
-      margin-left: 150px;
-      text-align: center;
-    }
-
-    #Favorite_shows h1{
-      font-size: .7em;
-      margin-top:10px;
-      text-align: center;
-    }
-
-    #Favorite_shows ul{
-      width:85%;
-      list-style-type: none;
-      margin-top: -20px;
-    }
-
-    #Favorite_shows li{
-      font-size: .45em;
-      margin-top: 35px;
-      text-align: center;
-    }
-
-    #sidegif-Show{
-      display:block;
-      margin-top: -85px;
-      margin-left: 150px;
-    }
-  
-  #phdemo{
-      display:block;
-      color:white;
-      font-size: .5em;
-      margin-top: -50px;
-      margin-left:10px;
-      width:65%;
-    }
-
-  #title{
-    font-size: 1em;
-    margin-top: -10px;
-  }
+  .about{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    margin-top: 200px;
+    margin-left:300px;
+    height:400px;
+    width:70%;
 
   }
-
-@media screen and (max-width: 320px) {
-  .sidebar button {
-    border:none;
-    background-color:transparent;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    font-family:HelloHeadlineW00Regular;
+  .about img{
+    width:250px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .about h1{
+    font-weight:normal;
+    font-size:.7em;
+    margin-top:-300px;
+    margin-left: 350px;
+  }
+  .about p{
     text-align: left;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    width: 85%;
-    height:10px;
-  } 
-    #Menu h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-  
-    #Menu p{
-      width: 95%;
-      text-align: center;
-      font-size: .30em;
-      margin-left: 2%;
-      margin-top: -50px;
-    }
+    font-size: .4em;
+    width:60%;
+    margin-left: 350px;
+  }
 
-    #Menu li{
-      font-size: .45em;
-      margin-top: 20px;
-      left: -50px;
-    }
-    #sidegif-menu{
-      display:block;
-      margin-left: 150px;
-      text-align: center;
-      margin-top: -35px;
-    }
-  
-    #Contact h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-  
-    #Contact ul{
-      list-style-type: none;
-      margin-top: -10px;
-      text-align: center;
-      margin-left: 1%;
-      width: 82%;
-  
-    }
-  
-    #Contact li{
-      font-size: .5em;
-      margin-top: 20px;
-    }
-  
-    #Contact p{
-      font-size: .35em;
-      text-align: center;
-      margin-left: 2%;
-    }
-  
-   
-  
-    #Wishlist h1{
-      font-size: 1em;
-      margin-top:10px;
-      text-align: center;
-    }
-  
-    #Wishlist ul{
-      list-style-type: none;
-      margin-left:-10%;
-      margin-top: -20px;
-      text-align: center;
-    }
-  
-    #Wishlist li{
-      width: 95%;
-      margin-left:15px;
-      font-size: .55em;
-      margin-top: 50px;
-    }
-
-    #sidegif-wishlist{
-      display:block;
-      margin: -35px auto;
-      text-align: center;
-    }
-      #Toys h1{
-        font-size: 1em;
-        margin-top:10px;
-        text-align: center;
-      }
-
-      #Toys li{
-        font-size: .5em;
-        margin-left: 15px;
-        margin-top: 45px;
-        text-align: center;
-      }
-      
-      #sidegif-Toys{
-        display: none;
-      }
-
-      #Clothes h1{
-        font-size: 1em;
-        margin-top:10px;
-        text-align: center;
-      }
-  
-      #Clothes li{
-        width: 110%;
-        font-size: .5em;
-        margin-top: 20px;
-        text-align: center;
-      }
-  
-      #sidegif-Clothes{
-        display:block;
-        margin-top: -100px;
-        margin-left: 150px;
-        text-align: center;
-      }
-  
-      #Favorite_shows h1{
-        font-size: .7em;
-        margin-top:10px;
-        text-align: center;
-      }
-  
-      #Favorite_shows ul{
-        width:85%;
-        list-style-type: none;
-        margin-top: -20px;
-      }
-  
-      #Favorite_shows li{
-        font-size: .45em;
-        margin-top: 35px;
-        text-align: center;
-      }
-
-      #sidegif-Show{
-        display:none;
-      }
-  
-  #playroom{
-    width:385px; 
-    height:150px;
-    margin-top:50px;
-    margin-left: -15px;
+  #contact h1{
+    font-weight:normal;
+    font-size:.7em;
+    text-align: center;
+  }
+  #contact p{
+    font-size: .4em;
+    text-align: center;
   }
   
-  #title{
-    font-size: 1em;
-    margin-top: 65px;
+  #contact ul li{
+    font-size: .4em;
+    margin-right:50px;
+    display: inline-block;
+  }
+  #contact img{
+    width: 50px;
+  }
+  
+  footer a{
+    font-size:.3em;
+    margin-left:450px;
+  }
+}
+
+@media screen and (max-width: 1380px){ 
+  header{
+    margin-left:100px;
+  }
+  .menu{
+    margin-left: 35px;
+    font-size: .15em;
+  }
+  #name{
+    margin-left: 100px;
+    margin-top: -800px;
+    width: 35%;
+  }
+  footer a{
+    margin-left: 425px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+  footer a{
+    margin-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  header{
+    margin-left: 80px;
+  }
+  .menu{
+    font-size: .15em;
+    margin-left: 2px;
+  }
+  #name{
+    font-size: .2em;
+    margin-top: -800px;
+    width: 30%;
+  }
+
+  .mySlides img{
+    width: 500px;
+  }
+
+  .prev{
+    left: 250px;
+  }
+  .next {
+    right: 200px;
+  }
+  
+  .event-typ #based{
+    font-size: .4em;
+  }
+  .event-typ #designer{
+    font-size: .7em;
+  }
+  .event-typ #info{
+    font-size: .4em;
+  }
+
+  .services h1{
+    font-size: .7em;
+  }
+  
+  .services ul li{
+    font-size: .35em;
+  }
+
+  .about{
+    font-family: 'GtSuperLight';
+    color: #504644;
+    margin-top: 200px;
+    margin-left:100px;
+    height:400px;
+    width:80%;
+
+  }
+  .about img{
+    width:250px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .about h1{
+    font-weight:normal;
+    font-size:.7em;
+    margin-top:-320px;
+    margin-left: 350px;
+  }
+  .about p{
+    text-align: left;
+    font-size: .4em;
+    width:60%;
+    margin-left: 350px;
+  }
+
+  #contact h1{
+    font-weight:normal;
+    font-size:.7em;
+    text-align: center;
+  }
+  #contact p{
+    font-size: .4em;
+    text-align: center;
+  }
+  
+  #contact ul li{
+    font-size: .4em;
+    margin-right:50px;
+    display: inline-block;
+  }
+  #contact img{
+    width: 50px;
+  }
+  
+  footer a{
+    font-size:.3em;
+    margin-left: 350px;
   }
 }
